@@ -1,10 +1,10 @@
 count = int(input("Введите количество слов: "))
 line = []
-i = 0
+n = 0
 
 while i < count :
-    word = input("Введите слово " + str(i + 1) + ': ')
+    word = input("Введите слово " + str(n + 1) + ': ')
     line.append(word)
-    i += 1
+    n += 1
 
 print(" ".join(line))
