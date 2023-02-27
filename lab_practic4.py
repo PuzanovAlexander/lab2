@@ -1,11 +1,11 @@
-a = input("Введите первый цвет:") 
-b = input("Введите второй цвет:")
+firstcolor = str(input("Введите первый цвет:")) 
+secondcolor = str(input("Введите второй цвет:"))
 
-if (a == "красный" or b == "красный") and (a == "синий" or b == "синий"):
+if (firstcolor == "красный" or secondcolor == "красный") and (firstcolor == "синий" or secondcolor == "синий"):
     print("фиолетовый")
-elif (a == "красный" or b == "красный") and (a == "жёлтый" or b == "жёлтый"):
+elif (firstcolor == "красный" or secondcolor == "красный") and (firstcolor == "жёлтый" or secondcolor == "жёлтый"):
     print("оранжевый")
-elif (a == "синий" or b == "синий") and (a == "жёлтый" or b == "жёлтый"):
+elif (firstcolor == "синий" or secondcolor == "синий") and (firstcolor == "жёлтый" or secondcolor == "жёлтый"):
     print("зелёный")
-elif a == b and (a == "красный" or a == "синий" or a == "жёлтый"):
-    print("Ошибка цвета")
+elif firstcolor == secondcolor and (firstcolor == "красный" or firstcolor == "синий" or firstcolor == "жёлтый"):
+    print("Ошибка цвета, введены одинаковые цвета")

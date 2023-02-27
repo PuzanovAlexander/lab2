@@ -1,9 +1,15 @@
-a=int(input("Введите номер места:"))
-if a>0 and a<37:
+place=int(input("Введите номер места:"))
+# области определения для места
+if place>=1 and place<=36:
     print ("купе")
-else:
+elif place>=37 and place<=54:
     print ("боковое место")
-if a%2==0:
+if place<=54 and place%2==0:
     print("вехняя полка")
-else:
+elif place<=54 and place%2==1:
     print("нижняя полка")
+#верхний и нижний порог значения места вагона    
+if place>=55:
+    print ('такого места нет в вагоне')
+elif place<=0:
+    print ('такого места нет в вагоне')
