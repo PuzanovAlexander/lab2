@@ -1,5 +1,5 @@
-firstcolor = str(input("Введите первый цвет:")) 
-secondcolor = str(input("Введите второй цвет:"))
+firstcolor = input("Введите первый цвет:")
+secondcolor = input("Введите второй цвет:")
 
 if (firstcolor == "красный" or secondcolor == "красный") and (firstcolor == "синий" or secondcolor == "синий"):
     print("фиолетовый")
